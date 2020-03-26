@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <style type="text/css">
+     <style>
+
+.footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 60px;
+   background-color: rgb(66, 133, 244);
+   color: white;
+   text-align: center;
+   font-family: verdana;
+   font-weight: bold;
+}
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #000;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: rgb(66, 133, 244);
+    color: white;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    background-color: none;
+  }
+
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 30%;
+    margin:10px;
+    text-align: center;
+    line-height: 7px;
+    font-size: 20px;
+  }
+
+  h5 {
+  color: orange;
+  font-family: verdana;
+     }
+
+  h6{
+     font-family: verdana;
+     }
+
+  h6.death{
+    color:red;
+    font-family: verdana;
+  }
+
+  #rec{
+    color:green;
+    font-family: verdana;
+  }
+
+  .cc,.td
+  {
+    font-family: Helvetica;
+    font-weight: bold;
+    text-align: center;
+  }
+  #danger{
+    color: red;
+  }
+
+  </style>
+<script>
+window.onload = function () {
+  
+var chart = new CanvasJS.Chart("chartContainer", {
+  animationEnabled: true,
+  title: {
+    text: "COVID-19 CORONA VIRUS INDIA ",
+    
+
+  },
+  axisX: {
+    interval: 1
+  },
+  axisY: {
+
+    title: "People Effected To The Virus STAY AT HOME STAY SAFE",
+
+  },
+  data: [{
+    type: "bar",
+    dataPoints: [
+      { label: "Kerala", y: 112},
+      { label: "Punjab", y:29},
+      { label: "Delhi", y: 36},
+      { label: "Jammu & Kashmir", y:11 },
+      { label: "Ladakh", y: 13},
+      { label: "Rajasthan", y: 36 },
+      { label: "Uttar Pradesh", y:38 },
+      { label: "Maharashtra",y:124},
+      { label: "Karnataka", y: 51},
+      { label: "TamilNadu", y: 26},
+      { label: "Telangana", y: 39 },
+      { label: "Haryana", y: 21},
+      {label:"AndhraPradesh",y:11},
+      {label:"HimachalPradesh",y:4},
+      {label:"Gujarat",y:43},
+      {label:"Uttarakhand",y:4},
+      {label:"Odisha",y:2},
+      {label:"WestBengal",y:11},
+      {label:"Chandigarh",y:7},
+      {label:"chattisgarh",y:6},
+      {label:"MadhyaPradesh",y:23},
+      {label:"Bihar",y:5},
+      {label:"Puducherry",y:1},
+      {label:"Manipur",y:1},
+      {label:"Mizoram",y:1},
+      {label:"Goa",y:6},
+    ]
+  }]
+});
+chart.render();
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 600px; width: 100;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+  <div class="topnav" id="myTopnav">
+  <a href="https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic" target="none" class="active">COVID-19 Statistics INDIA</a> 
+  <a href="measures.jpg" target="none" class="active">Preventive Measures</a>
+  <a href="https://www.youtube.com/watch?v=iKANJ9tJCvw" target="none" class="active">Awareness Videos</a>
+</div>
+
+  <div class="flex-container">
+  <div>
+    <h5>CONFIRMED </h6>
+       <h6>606</h6>
+  </div>
+  <div>
+    <h5 id="danger">DEATHS</h6>
+       <h6 class="death">10</h6>
+  </div>
+  <div>
+    <h5 id="rec">RECOVERED</h6>
+       <h6 id="rec">42</h6>
+  </div>
+</div>
+  <p class="cc">
+    Last updated at 26 March 01:00 PM IST.*
+  </p>
+  <div id="curve_chart" style="width: 90 %; height:60%"></div>
+
+  <p class="td">
+
+  </p>
+  <div id="top_x_div" style="width: 90%; height: 70%;"></div>
+
+    <p>Sources : MHO(MINISTRY OF HOME AFFAIRS) & Wikipedia </p>
+  </div>
+</body>
+</html>
