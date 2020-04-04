@@ -1,9 +1,17 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <title>COVID-19</title>
+        <link rel="stylesheet" href="div.css">
   <style type="text/css">
      <style>
 
+  .m{
+    position: relative;
+    left: 20;
+    font-size: 20;
+    font-family: verdana;
+  }
 .footer {
    position: relative;
    left: 0;
@@ -87,12 +95,21 @@
 
   .cc,.td
   {
+    font-size: 20px;
     font-family: Helvetica;
     font-weight: bold;
     text-align: center;
   }
   #danger{
     color: red;
+  }
+  .cc1
+  {
+    font-color:blue;
+    font-size: 40px;
+    font-family: Helvetica;
+    font-weight: bold;
+    text-align: center;
   }
 
   </style>
@@ -117,30 +134,30 @@ var chart = new CanvasJS.Chart("chartContainer", {
   data: [{
     type: "bar",
     dataPoints: [
-      { label: "Kerala", y: 109},
-      { label: "Punjab", y:29},
-      { label: "Delhi", y: 30},
-      { label: "Jammu & Kashmir", y:6},
-      { label: "Ladakh", y: 13},
-      { label: "Rajasthan", y: 40},
-      { label: "Uttar Pradesh", y:35 },
-      { label: "Maharashtra",y:116},
-      { label: "Karnataka", y: 55},
-      { label: "TamilNadu", y: 23},
-      { label: "Telangana", y: 44},
-      { label: "Haryana", y: 30},
-      {label:"AndhraPradesh",y:10},
-      {label:"HimachalPradesh",y:4},
-      {label:"Gujarat",y:38},
-      {label:"Uttarakhand",y:4},
-      {label:"Odisha",y:2},
-      {label:"WestBengal",y:9},
-      {label:"Chandigarh",y:7},
-      {label:"chattisgarh",y:6},
-      {label:"MadhyaPradesh",y:14},
-      {label:"Bihar",y: 4},
-      {label:"Puducherry",y:1},
-      {label:"Manipur",y:1},
+      { label: "Kerala", y: 295},
+      { label: "Punjab", y:53},
+      { label: "Delhi", y: 386},
+      { label: "Jammu & Kashmir", y:75 },
+      { label: "Ladakh", y: 14},
+      { label: "Rajasthan", y: 179 },
+      { label: "Uttar Pradesh", y:174 },
+      { label: "Maharashtra",y:423},
+      { label: "Karnataka", y: 128},
+      { label: "TamilNadu", y: 411},
+      { label: "Telangana", y: 158 },
+      { label: "Haryana", y: 49},
+      {label:"AndhraPradesh",y:161},
+      {label:"HimachalPradesh",y:6},
+      {label:"Gujarat",y:95},
+      {label:"Uttarakhand",y:16},
+      {label:"Odisha",y:5},
+      {label:"WestBengal",y:63},
+      {label:"Chandigarh",y:18},
+      {label:"chattisgarh",y:9},
+      {label:"MadhyaPradesh",y:104},
+      {label:"Bihar",y:29},
+      {label:"Puducherry",y:5},
+      {label:"Manipur",y:2},
       {label:"Mizoram",y:1},
       {label:"Goa",y:6},
     ]
@@ -163,19 +180,19 @@ chart.render();
   <div class="flex-container">
   <div>
     <h5>CONFIRMED </h6>
-    <h6>637</h6>
+       <h6>2902</h6>
   </div>
   <div>
     <h5 id="danger">DEATHS</h6>
-    <h6 class="death">11</h6>
+       <h6 class="death">68</h6>
   </div>
   <div>
     <h5 id="rec">RECOVERED</h6>
-       <h6 id="rec">42</h6>
+       <h6 id="rec">184</h6>
   </div>
 </div>
   <p class="cc">
-    Last updated at 26 March 01:00 PM IST.*
+    Last updated at 04 April 02:00 PM IST.*
   </p>
   <div id="curve_chart" style="width: 90 %; height:60%"></div>
 
@@ -184,7 +201,39 @@ chart.render();
   </p>
   <div id="top_x_div" style="width: 90%; height: 70%;"></div>
 
-    <p>Sources : MHO(MINISTRY OF HOME AFFAIRS) & Wikipedia </p>
-  </div>
+    <p class="cc">Sources : MHO(MINISTRY OF HOME AFFAIRS) & Wikipedia </p>
+    <p class="cc1"><b>Call 104 if you having any symptoms of COVID-19</b></p>
+      </div>
+  <div class="contanier">
+        <div class="main">
+          <div class="road"  >
+           <ul>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+           </ul>   
+           <div class="bus">
+           <div class="back">
+               <div class="back1door"></div>
+               <div class="back2door"></div>
+               <div class="join"></div>
+           </div>
+               <div class="front">
+                   <div class="black"></div>
+                   <div class="light1"></div>
+               <div class="light2"></div>
+               </div>   
+               </div>
+            <div class="gift"></div>
+           </div>
+       </div>
+    </div>
 </body>
 </html>
