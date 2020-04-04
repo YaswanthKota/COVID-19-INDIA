@@ -6,12 +6,8 @@
   <style type="text/css">
      <style>
 
-  .m{
-    position: relative;
-    left: 20;
-    font-size: 20;
-    font-family: verdana;
-  }
+
+
 .footer {
    position: relative;
    left: 0;
@@ -235,5 +231,67 @@ chart.render();
            </div>
        </div>
     </div>
+    <div>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+
+<div align="right" >
+  <div id="visualization">   </div>
+</div>
+<script type="text/javascript">
+google.load('visualization', '1', {'packages': ['geochart']});
+google.setOnLoadCallback(drawVisualization);
+
+function drawVisualization() {
+  var data = google.visualization.arrayToDataTable([
+        ['State Code', 'State', 'No of Cases'],     
+          [ 'IN-UP','Uttar Pradesh', 174],
+    ['IN-MH','Maharashtra', 423],
+    ['IN-BR','Bihar', 29],
+    ['IN-WB','West Bengal', 63],
+    ['IN-MP','Madhya Pradesh', 104],
+    ['IN-TN','Tamil Nadu', 411],
+    ['IN-RJ','Rajasthan', 179],
+    ['IN-KA','Karnataka', 128],
+    ['IN-GJ','Gujarat', 95],
+    ['IN-AP','Andhra Pradesh', 161],
+    ['IN-OR','Orissa', 5],
+    ['IN-TG','Telangana', 158],
+    ['IN-KL','Kerala',295],
+    ['IN-JH','Jharkhand',2],
+    ['IN-AS','Assam', 24],
+    ['IN-PB','Punjab', 53],
+    ['IN-CT','Chhattisgarh', 9],
+    ['IN-HR','Haryana', 49],
+    ['IN-JK','Jammu and Kashmir', 75],
+    ['IN-UT','Uttarakhand', 16],
+    ['IN-HP','Himachal Pradesh', 6],
+    ['IN-MN','Manipur', 2],
+    ['IN-GA','Goa', 6],
+    ['IN-AR', 'Arunachal Pradesh', 1],
+    ['IN-MZ','Mizoram', 1],
+    ['IN-DL','Delhi', 386],
+    ['IN-PY','Puducherry', 5],
+    ['IN-CH','Chandigarh', 18],
+    ['IN-AN','Andaman and Nicobar Islands', 10],
+  ]);
+
+      var opts = {
+        region: 'IN',
+        domain:'IN',
+        displayMode: 'regions',
+        colorAxis: {colors: ['#e5ef88', '#d4b114', '#e85a03']},
+        resolution: 'provinces',
+        /*backgroundColor: '#81d4fa',*/
+        /*datalessRegionColor: '#81d4fa',*/
+        defaultColor: '#f5f5f5',
+        width: 640, 
+        height: 480
+      };
+      var geochart = new google.visualization.GeoChart(
+          document.getElementById('visualization'));
+      geochart.draw(data, opts);
+    };
+</script>
+</div>
 </body>
 </html>
