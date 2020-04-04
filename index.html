@@ -6,6 +6,12 @@
   <style type="text/css">
      <style>
 
+#m{
+  align-self: right;
+  position: relative;
+  margin-top: 50;
+  width: 440px;
+}
 
 
 .footer {
@@ -200,7 +206,7 @@ chart.render();
     <p class="cc">Sources : MHO(MINISTRY OF HOME AFFAIRS) & Wikipedia </p>
     <p class="cc1"><b>Call 104 if you having any symptoms of COVID-19</b></p>
       </div>
-  <div class="contanier">
+  <div class="contanier" id="n">
         <div class="main">
           <div class="road"  >
            <ul>
@@ -234,9 +240,10 @@ chart.render();
     <div>
     <script type='text/javascript' src='https://www.google.com/jsapi'></script>
 
-<div align="right" >
-  <div id="visualization">   </div>
-</div>
+<div id="m" align="right" >
+  <div id="visualization" style="position: relative;left: 0px;top:250px;"> 
+  </div>
+
 <script type="text/javascript">
 google.load('visualization', '1', {'packages': ['geochart']});
 google.setOnLoadCallback(drawVisualization);
